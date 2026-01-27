@@ -3,14 +3,10 @@ library(pheatmap)
 library(Cairo)
 
 setwd('E:\\R')
-data <- read.csv(file="20240606.csv", header=TRUE,row.names = 1,sep=",",stringsAsFactors=FALSE)
-
+data <- read.csv(file="20240614.csv", header=TRUE,row.names = 1,sep=",",stringsAsFactors=FALSE)
 df<-scale(data) 
 row_dend = hclust(dist(df))   
-
 as.matrix(data)
-
-
 tiff(
   filename = "Heatmap2.tiff", 
   width = 5,           

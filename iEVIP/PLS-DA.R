@@ -4,9 +4,9 @@ library(mixOmics)
 library(ggplot2)
 
 setwd('E:\\R') 
-
-otu <- read.table(file="otu4.txt",sep="\t",header=T,check.names=FALSE ,row.names=1)
-group <- read.table(file="group4.txt",sep="\t",header=T,check.names=FALSE ,row.names=1)
+nx = 63
+otu <- data[1:nx, 1:10]
+group <- data[1:nx, 11]
 
 df_plsda <- plsda(otu, group$group, ncomp = 2)
 
