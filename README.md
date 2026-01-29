@@ -2,6 +2,9 @@
 This GitHub repository contains R scripts used for data visualization, multivariate analysis, and classification in this study, including Heatmap,PCA, PLS-DA, LDA, and  RF + LDA + NN (k = 5).
 
 The file 20240614.csv contains data derived from cell-based experiments. Each row corresponds to an independent cell sample, and columns represent measured features used for subsequent multivariate analyses, including heatmap visualization, PCA, PLS-DA, LDA, and combined classification models.
+
+---
+
 ## Software requirements
 All analyses were performed using **R version 4.3.0**.
 The following software is required:
@@ -16,8 +19,10 @@ Installation instructions are provided on the CRAN website for Windows, macOS, a
 
 The scripts rely on commonly used R packages for data analysis and visualization.
 All packages can be installed  using:
-install.packages(c("ggplot2", "pheatmap", "mixOmics", "MASS",
-                   "randomForest", "caret", "pROC"))
+
+```
+install.packages(c("ggplot2", "pheatmap", "mixOmics", "MASS", "randomForest", "caret", "pROC"))
+```
 
 ---
 ## Description of individual scripts
