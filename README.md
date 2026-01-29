@@ -32,15 +32,11 @@ install.packages(c("ggplot2", "pheatmap", "mixOmics", "MASS",
 
 3. **PLS-DA.R**
    
-    This script performs **partial least squares discriminant analysis (PLS-DA)** as a supervised multivariate classification approach. It is used to assess group separation and identify features contributing most strongly to class discrimination.
+    This script performs **partial least squares discriminant analysis (PLS-DA)** as a supervised multivariate classification approach. It is used to assess group separation and identify features contributing most strongly to class discrimination. 
    
-4. **LDA.R**
+4. **RF+LDA+NN(k=5).R**
    
-    This script applies **linear discriminant analysis (LDA)** as a linear and interpretable classification method. LDA serves as a baseline classifier for comparison with nonlinear models.
-   
-5. **RF+LDA+NN(k=5).R**
-   
-    This script implements and compares multiple classification models, including **Random Forest (RF)**, **Linear Discriminant Analysis (LDA)**, and **k-nearest neighbor (k-NN, k = 5)**. It is used to evaluate classification performance under different modeling assumptions and to assess model robustness.
+    This script implements and compares multiple classification models, including **Random Forest (RF)** and **Linear Discriminant Analysis (LDA)**. It is used to evaluate classification performance under different modeling assumptions and to assess model robustness.
 
 ---
 ## Reproducibility
